@@ -1,6 +1,6 @@
 import React, { FunctionComponent, Fragment, useState, useMemo } from "react";
 import {
-  AlgolLocalBattle,
+  AlgolSession,
   AlgolMeta,
   AlgolBattle,
   AlgolErrorReporter,
@@ -21,7 +21,7 @@ interface BattleLandingActions {
 
 type BattleLandingProps = {
   actions: BattleLandingActions;
-  session: AlgolLocalBattle;
+  session: AlgolSession;
   battle: AlgolBattle;
   meta: AlgolMeta<AlgolGameBlobAnon>;
 };
